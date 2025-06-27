@@ -1,4 +1,7 @@
-
+"""
+Shopify Product Options App Detector
+检测Shopify商店使用的产品选项应用
+"""
 import requests
 from bs4 import BeautifulSoup
 import re
