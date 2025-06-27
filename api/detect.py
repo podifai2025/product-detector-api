@@ -297,15 +297,15 @@ class ShopifyAppDetector:
         
         return score > 0, score
     
-    def detect_easily(self) -> Tuple[bool, int]:
-        """检测Easily Product Options"""
+    def detect_easify(self) -> Tuple[bool, int]:
+        """检测easify Product Options"""
         score = 0
         
         patterns = {
-            'EasilyOptions': 35,
-            'easily-options': 30,
-            'data-easily': 20,
-            'easily_product_options': 15
+            'EasifyOptions': 35,
+            'easify-options': 30,
+            'data-easify': 20,
+            'easify_product_options': 15
         }
         
         for pattern, points in patterns.items():
@@ -354,7 +354,7 @@ class ShopifyAppDetector:
             'LPO (Live Product Options)': self.detect_lpo,
             'Avis Product Options': self.detect_avis,
             'Globo Product Options': self.detect_globo,
-            'Easily Product Options': self.detect_easily,
+            'Easify Product Options': self.detect_easify,
             'Shopaw Product Options': self.detect_shopaw
         }
         
