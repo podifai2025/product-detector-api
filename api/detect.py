@@ -236,8 +236,7 @@ class ShopifyAppDetector:
         patterns = {
             'SCProductOptions': 35,
             'sc-product-options': 30,
-            'data-sc-option': 20,
-            'shopcircle': 15
+            'data-sc-option': 20
         }
         
         for pattern, points in patterns.items():
